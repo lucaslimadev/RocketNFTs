@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    --body-background: #0e0e0e;
+    --color-logo: #ff5b50;
+    --card-color: #252525;
+    --text-color: #fff;
+    --subtitle-color: #5a5757;
+    --black-text: #000;
+    --color-input: #0D0D0D;
+}
+
+body {
+    padding: 4% 5%;
+    background-color: var(--body-background);
+    background-image: url(assets/background.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    font-family: 'Montserrat', sans-serif;
+    color: var(--text-color);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 80px;
+}
+
+nav ul {
+    display: flex;
+    gap: 4rem;
+    list-style: none;
+}
+
+nav ul li a {
+    color: var(--text-color);
+}
+
+span {
+    color: var(--color-logo);
+}
+
+h1 {
+    font-size: 44px;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+
+    border: none;
+    cursor: pointer;
+    
+    padding: 10px 15px;
+}
+
+button:hover {
+    filter: brightness(110%);
+    transition: 0.8ms;
+}
+
+.content {
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 80px;
+}
+
+.content h2 {
+    font-size: 45px;
+}
+
+.content span {
+    color: var(--color-logo);
+}
+
+.content p {
+    padding-top: 10px;
+}
+
+.content-artists {
+    display: flex;
+    align-items: flex-end;
+    margin-top: 50px;
+}
+
+.content-gallery {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-gallery img {
+    width: 292px;
+    margin-top: 40px;
+    border: solid 1px;
+}
+
+.content-banner {
+    display: flex;
+    position: absolute;
+    left: 0;
+
+    border-bottom: 1px solid var(--subtitle-color);
+}
+
+.content-banner h3 {
+    font-size: 2.5em;
+    padding-top: 60px;
+}
+
+.content-img {
+    line-height: 0;
+}
+
+.content-img img {
+    width: 1087px;
+}
+
+.content-info {
+    padding: 90px 65px 0 65px;
+    border-right: 1px solid var(--subtitle-color);
+    text-align: center;
+}
+
+.content-info p {
+    color: var(--subtitle-color);
+    font-weight: 700;
+}
+
+.content-aside {
+    display: flex;
+    gap: 8rem;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+.content-aside p a {
+    color: var(--color-logo);
+    text-decoration: underline;
+}
+
+.aside-link {
+    margin: 60px 0 60px 0 ;
+}
+
+.aside-link a {
+    text-decoration: underline;
+    color: var(--text-color);
+}
+
+.content-week {
+    margin-top: 60%;
+    margin-bottom: 140px;
+}
+
+.content-nft {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nft-group {
+    margin-top: 130px;
+    padding-right: 258px;
+    border-right: solid 1px var(--subtitle-color);
+}
+
+.nft-group-two {
+    margin-top: 130px;
+}
+
+.nft {
+    margin-top: 80px;
+}
+
+.nft-description {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 8px;
+    padding-bottom: 30px;
+}
+
+.nft-description h3 {
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.nft-description p:nth-of-type(1) {
+    font-weight: 700;
+    color: var(--subtitle-color);
+}
+
+.nft-description p:nth-of-type(2) {
+    color: var(--color-logo);
+}
+
+.title-section-artists {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.content-best-artists {
+    margin-bottom: 70px;
+}
+
+.best-artists {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+.artists {
+    display: flex;
+    align-items: center;
+    padding: 30px 45px;
+    line-height: 1.8em;
+
+    background-color: var(--card-color);
+}
+
+.artists-reverse {
+    background-color: var(--color-logo);
+}
+
+.artists-reverse span {
+    color: var(--text-color);
+}
+
+.artists img {
+    margin-right: 48px;
+}
+
+.link-all-artists {
+    display: flex;
+    justify-content: center;
+    padding: 80px 0 130px 0;
+    font-size: 1.2rem;
+}
+
+.link-all-artists a {
+    color: var(--text-color);
+}
+
+.link-all-artists img {
+    padding-left: 20px;
+    
+}
+
+footer {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    background-color: var(--card-color);
+
+    padding: 4% 5% 3% 5%;
+}
+
+.top-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 26%;
+}
+
+.top-footer button {
+    background-color: var(--color-logo);
+    border: 0;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.content-footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 22%;
+
+    border-top: solid 1px var(--subtitle-color);
+    border-bottom: solid 1px var(--subtitle-color);
+
+    padding: 40px 5% 40px 5%;
+    margin-top: 20px;
+}
+
+.content-footer input {
+    background-color: var(--black-text);
+    color: var(--subtitle-color);
+
+    padding: 16px 65px 16px 14px;
+    margin-top: 30px;
+    border: 0;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+}
+
+.content-footer button {
+    padding: 16px 28px;
+    border: 0;
+    font-size: 14px;
+    color: var(--black-text);
+    cursor: pointer;
+}
+
+.form-footer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+
+    font-size: 28px;
+    border-right: solid 1px var(--subtitle-color);
+}
+
+.form-input {
+    margin-top: 50px;
+    margin-right: 50px;
+}
+
+.map-footer {
+    display: flex;
+    gap: 10rem;
+    margin-left: 47%;
+}
+
+.map-footer li {
+    list-style: none;
+    line-height: 2.3rem;
+    color: var(--subtitle-color);
+}
+
+.map-footer li:first-child {
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+.contato-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 65px;
+}
+
+.contato-footer a {
+    color: var(--subtitle-color);
+}
+
+.contato-footer button {
+    background: none;
+    border: 0;
+    margin-left: 30px;
+    cursor: pointer;
+}
